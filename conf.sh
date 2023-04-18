@@ -2,7 +2,7 @@
 ##fixed parameters
 #odoo
 
-OE_VERSION="14.0"
+OE_VERSION="16.0"
 OE_INSTALL_DIR="$OE_HOME/$OE_VERSION"
 OE_REPO="$OE_INSTALL_DIR/odoo"
 #Set to true if you want to install it, false if you don't need it or have it already installed.
@@ -32,9 +32,9 @@ HTTP_PROTOCOL="https"
 HTTPS_PORT="443"
 INSTALL_CERTIFICATE="False"
 PUBLIC_IP="" # SET MANUALLY
-DOMAIN_NAME="" # DNS SHOULD BE ALREADY CONFIGURED!
-DOMAIN_ALIASES=() # ("www.demo.ventortech.com" "zzz.demo.ventortech.com")
-LE_EMAIL="@mail"
+DOMAIN_NAME="erp.istecsoporte.com" # DNS SHOULD BE ALREADY CONFIGURED!
+DOMAIN_ALIASES=("www.erp.istecsoporte.com") # ("www.demo.ventortech.com" "zzz.demo.ventortech.com")
+LE_EMAIL="developer@istecsoporte.com"
 LE_CRON_SCRIPT="/etc/cron.daily/certbot-renew"
 
 if [ $IS_ENTERPRISE = "True" ]; then
